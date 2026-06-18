@@ -1,0 +1,43 @@
+{
+  "workflow_id": "cotizacion_auto",
+  "nombre": "Cotización de seguro automotor",
+  "objetivo": "Recolectar datos mínimos para cotizar un seguro de auto",
+  "intencion": "cotizar_auto",
+  "pasos": [
+    {
+      "id": "saludo",
+      "tipo": "mensaje",
+      "texto": "Hola, te ayudo a cotizar tu seguro de auto. Te voy a pedir algunos datos."
+    },
+    {
+      "id": "marca",
+      "tipo": "pregunta",
+      "campo": "marca",
+      "texto": "¿Cuál es la marca del vehículo?"
+    },
+    {
+      "id": "modelo",
+      "tipo": "pregunta",
+      "campo": "modelo",
+      "texto": "¿Cuál es el modelo?"
+    },
+    {
+      "id": "anio",
+      "tipo": "pregunta",
+      "campo": "anio",
+      "texto": "¿De qué año es?"
+    },
+    {
+      "id": "uso",
+      "tipo": "pregunta",
+      "campo": "uso",
+      "texto": "¿Es de uso particular o comercial?"
+    },
+    {
+      "id": "derivar_productor",
+      "tipo": "accion",
+      "accion": "crear_oportunidad_crm",
+      "asignar_a": "productor"
+    }
+  ]
+}
