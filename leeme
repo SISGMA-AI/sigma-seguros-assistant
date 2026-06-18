@@ -1,0 +1,17 @@
+# SIGMA Seguros Assistant
+
+Arquitectura conversacional para gestionar clientes de un productor de seguros.
+
+## Objetivo
+
+Centralizar conversaciones de clientes desde WhatsApp, web o email, detectar intención, extraer datos relevantes y asistir al productor en:
+
+- Cotizaciones
+- Renovaciones
+- Siniestros
+- Consultas de pólizas
+- Seguimiento comercial
+
+## Flujo general
+
+Cliente → Canal → Webhook → IA Conversacional → Workflow JSON → CRM / Productor → Respuesta al cliente
